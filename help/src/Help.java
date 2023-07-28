@@ -1,7 +1,7 @@
 import java.io.IOException;
 
     /*
-        Tente isso 3-1
+        Tente isso 3-2
 
         Um sistema de ajuda simples.
     */
@@ -19,6 +19,8 @@ public class Help {
             System.out.println("Choose one: ");
 
             choice = (char) System.in.read();
+
+            //Remove caracter indesejado no buffer e entrada
             do {
                 ignore = (char) System.in.read();
             }while (ignore != '\n');
